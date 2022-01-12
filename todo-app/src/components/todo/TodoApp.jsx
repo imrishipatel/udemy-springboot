@@ -13,6 +13,7 @@ import LoginComponent from "./LoginComponent.jsx";
 import HeaderComponent from "./HeaderComponent.jsx";
 import FooterComponent from "./FooterComponent.jsx";
 import ErrorComponent from "./ErrorComponent.jsx";
+import WelcomeComponent from "./WelcomeComponent.jsx";
 // import "./../bootstrap.css";
 
 class TodoApp extends PureComponent {
@@ -125,20 +126,20 @@ class LogoutComponent extends Component {
   }
 }
 
-function WelcomeComponent() {
-  let { name } = useParams();
-  return (
-    <>
-      <h1>Welcome!</h1>
-      <div className="container">
-        Hey {name}! You can manage your Todos <Link to="/todos">here.</Link>
-      </div>
-    </>
-    // <div>
-    //
-    // </div>
-  );
-}
+// function WelcomeComponent() {
+//   let { name } = useParams();
+//   return (
+//     <>
+//       <h1>Welcome!</h1>
+//       <div className="container">
+//         Hey {name}! You can manage your Todos <Link to="/todos">here.</Link>
+//       </div>
+//     </>
+//     // <div>
+//     //
+//     // </div>
+//   );
+// }
 
 // function ErrorComponent() {
 //   return <div>An Error Occured!!! Please reload the application. </div>;
